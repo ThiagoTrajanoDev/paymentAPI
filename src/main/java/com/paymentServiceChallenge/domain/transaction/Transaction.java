@@ -2,10 +2,7 @@ package com.paymentServiceChallenge.domain.transaction;
 
 import com.paymentServiceChallenge.domain.user.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -16,6 +13,7 @@ import java.time.LocalDateTime;
 @Setter
 @EqualsAndHashCode(of = "id")
 @AllArgsConstructor
+@NoArgsConstructor
 public class Transaction {
 
     @Id
